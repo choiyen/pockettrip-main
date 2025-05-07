@@ -1,0 +1,50 @@
+.where-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.where-title3 {
+  font-size: 24px;
+  margin-bottom: 20%;
+  font-weight: bold;
+  line-height: 1.5;
+  @media (min-width: 768px) {
+    margin-bottom: 5%;
+    font-size: 30px;
+  }
+}
+
+.datepicker-container {
+  margin-bottom: 20px;
+  width: 250px; /* 날짜 선택 영역의 너비 */
+}
+
+.date-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.datepicker {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  outline: none;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}

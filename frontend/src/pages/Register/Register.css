@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+html {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-weight: 500;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.Register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.Register-page .logoSz {
+  position: relative;
+  width: 15%;
+  height: 13%;
+  max-width: 200px;
+  /* margin: 0 auto; */
+  margin-bottom: 7%;
+  margin-top: 2%;
+}
+
+.logoSz img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* 이미지 비율을 유지하면서 크기 조절 */
+}
+
+#registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+input {
+  background-color: #ebebeb;
+  border-width: 0;
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+
+.inD {
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  opacity: 0.7;
+  font-weight: 400;
+  color: #b2b2b2;
+  padding-left: 5px;
+  background-position: left 3px center;
+  background-repeat: no-repeat;
+}
+
+.loginBt {
+  background-color: #0077cc;
+  border-width: 0;
+  width: 150px;
+  height: 35px;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  font-size: medium;
+}
+
+.isUser {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.lostEp {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+#RegistersuccessModal {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 35%;
+  background-color: #fbfbfb;
+  box-shadow: 0px 1px 4px #adb5bd;
+  z-index: 999;
+  border-radius: 15px;
+}
+
+#RegistersuccessModal .modal {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  height: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+}
+
+#RegistersuccessModal .modal h2 {
+  margin-bottom: 20%;
+  font-size: x-large;
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 50px;
+  }
+}
+
+#RegistersuccessModal .modal p {
+  margin-bottom: 25%;
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 50px;
+  }
+}
+
+#RegistersuccessModal .modalBtBox {
+  display: flex;
+  /* margin-top: 5%; */
+  justify-content: center;
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 55px;
+  }
+}
+
+#RegistersuccessModal .modalOffBt {
+  background-color: #da2337;
+  border-width: 0;
+  border-radius: 10px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  width: 100px;
+  height: 37px;
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 55px;
+  }
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  display: none; /* 기본적으로 숨김 처리 */
+}
+
+.error-text.show {
+  display: block; /* 오류 발생 시 표시 */
+  margin-bottom: 15px;
+  margin-top: -17px;
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+  #successModal {
+    width: 60%;
+    height: 75%;
+  }
+
+  .modal h2 {
+    margin-bottom: 10%;
+  }
+
+  .modal p {
+    margin-bottom: 65%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Register-page .logoSz {
+    margin-bottom: 1%;
+  }
+
+  #successModal {
+    width: 35%;
+    height: 80%;
+  }
+
+  .modal h2 {
+    margin-bottom: 10%;
+  }
+
+  .modal p {
+    margin-bottom: 65%;
+  }
+}

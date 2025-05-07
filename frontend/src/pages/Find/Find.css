@@ -1,0 +1,203 @@
+html {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-weight: 500;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.find-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.logoSz {
+  height: 75px;
+  margin-bottom: 10%;
+  margin-top: 25%;
+}
+
+.findD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.findForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.findForm h2 {
+  margin-bottom: 10px;
+}
+
+input {
+  background-color: #ebebeb;
+  border-width: 0;
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+input::placeholder {
+  opacity: 0.7;
+  font-weight: 400;
+  color: #b2b2b2;
+}
+
+.findBt {
+  background-color: #0077cc;
+  border-width: 0;
+  width: 150px;
+  height: 35px;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  font-size: medium;
+}
+
+.isUser {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.lostEp {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+#successModal {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 55%;
+  background-color: #fbfbfb;
+  box-shadow: 0px 1px 4px #adb5bd;
+  z-index: 999;
+  border-radius: 15px;
+}
+
+.modal {
+  position: absolute;
+  width: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0px 1px 4px #adb5bd;
+  height: auto; /* 모달 높이를 자동 조정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal p {
+  margin-bottom: 40px;
+}
+
+.modalBtBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 버튼 사이 간격 조정 */
+  width: 100%;
+}
+
+.modal button {
+  background-color: #da2337;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.modal button:hover {
+  background-color: #ba0b1f;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  display: none; /* 기본적으로 숨김 처리 */
+}
+
+.error-text.show {
+  display: block; /* 오류 발생 시 표시 */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logoSz {
+    height: 120px;
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .logoSz {
+    margin-top: 5%;
+  }
+
+  .findD {
+    margin-top: -3%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logoSz {
+    margin-top: 3%;
+    height: 90px;
+  }
+  .findD {
+    margin-top: -3%;
+  }
+  .findBt {
+    margin-bottom: 5%;
+  }
+}

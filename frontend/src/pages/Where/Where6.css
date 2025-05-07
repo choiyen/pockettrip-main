@@ -1,0 +1,49 @@
+.where-container6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.where-title6 {
+  font-size: 24px;
+  margin-bottom: 20%;
+  font-weight: bold;
+  line-height: 1.5;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+}
+
+.code {
+  font-size: 24px;
+  margin-bottom: 20%;
+  font-weight: bolder;
+  letter-spacing: 15px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+}
+
+.button-container6 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.code2 {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #c2bfbf;
+}
